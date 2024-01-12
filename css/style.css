@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Nico-Moji";
+  src: url(/css/font/NicoMoji-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url(/css/font/Archivo.ttf);
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: url(/img/ellipse-bg.png) top right/auto no-repeat, #000D0A;
+  font-family: Archivo;
+}
+
+header {
+  padding: 10px 20px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav .logo {
+  margin-left: -15px;
+}
+
+header .menu-item {
+  display: none;
+}
+
+header .menu-item .burger-icon {
+  cursor: pointer;
+}
+
+header .item {
+  -webkit-box-shadow: 0px 11px 37.70000076293945px 0px #1F5B48;
+          box-shadow: 0px 11px 37.70000076293945px 0px #1F5B48;
+  background: #000D0A;
+  padding: 50px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: none;
+}
+
+header .item ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+header .item ul li {
+  color: #B9B9B9;
+  text-transform: uppercase;
+  list-style: none;
+  text-align: center;
+}
+
+header .item ul li a {
+  text-decoration: none;
+  color: #B9B9B9;
+  display: block;
+  margin: 0 auto;
+}
+
+header .item ul li img {
+  width: 30px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+main {
+  padding: 0 20px;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left bottom, left top, from(#061511), to(#061511)), -webkit-gradient(linear, left top, left bottom, from(rgba(195, 255, 220, 0.25)), to(rgba(220, 220, 220, 0.0975)));
+  background: linear-gradient(0deg, #061511, #061511), linear-gradient(180deg, rgba(195, 255, 220, 0.25) 0%, rgba(220, 220, 220, 0.0975) 100%);
+  border: 1px solid rgba(195, 255, 220, 0.25);
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    min-height: 400px;
+    margin: 70px auto;
+  }
+}
+
+.banner .content {
+  padding: 50px 50px 130px;
+}
+
+@media (min-width: 1200px) {
+  .banner .content {
+    padding: 100px 50px 130px;
+  }
+}
+
+.banner .content .name {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .banner .content .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.banner .content .name img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+@media (min-width: 1200px) {
+  .banner .content .name img {
+    width: 200px;
+    margin: 0;
+  }
+}
+
+.banner .content .name h1 {
+  color: #18A77A;
+  font-size: 40px;
+  font-family: Nico-Moji;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-top: -30px;
+}
+
+@media (min-width: 1200px) {
+  .banner .content .name h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+
+.banner .content .sub-heading {
+  font-size: 40px;
+  font-family: Nico-Moji;
+  font-weight: 400;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .banner .content .sub-heading {
+    font-size: 155px;
+    margin-top: -65px;
+    margin-right: -30px;
+  }
+}
+
+.banner .content .sub-heading::after {
+  content: '';
+  height: 10px;
+  width: 70%;
+  position: absolute;
+  background: url(../img/GreenLine.png) center center/contain no-repeat;
+  bottom: -15px;
+}
+
+.banner .content .sub-heading::before {
+  content: '';
+  height: 10px;
+  width: 55%;
+  position: absolute;
+  background: url(../img/yellowLine.png) center center/contain no-repeat;
+  bottom: -40px;
+}
+
+.banner .content .sub-heading .green {
+  color: #00A783;
+}
+
+.banner .content .sub-heading .yellow {
+  color: #D4E202D9;
+}
+
+.banner .content .sub-heading .white {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
