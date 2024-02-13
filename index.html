@@ -7,27 +7,33 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Gabriel Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 <body>
 
     <header>
-        <nav>
-            <a href="index.html">
-                <img src="img/logo.png" alt="" class="logo">
-            </a>
-            <div class="menu-item">
-                <img src="img/burger nav.png" alt="" class="burger-icon">
-            </div>
-        </nav>
-        <div class="item">
-            <ul>
-                <li><a href="index.html"><img src="img/Home.svg"> Home</a></li>
-                <li><a href="works.html"><img src="img/Works.svg"> Works</a></li>
-                <li><a href="about.html"><img src="img/About.svg"> About</a></li>
-                <li><a href="contact.html"><img src="img/Contact.svg"> Contact</a></li>
-            </ul>
+        <div class="header_container">
+             <div class="logo">
+                  <a href="index.html"> <img src="img/logo.png" alt="Get Easy Recipe Logo" id="logo"></a>
+             </div>
+
+             <input type="checkbox" id="menu-toggle">
+             <label for="menu-toggle" class="toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+             </label>
+
+             <div class="menu">
+                  <a href="index.html">Home</a>
+                  <a href="#features">Features</a>
+                  <a href="#community">Community</a>
+                  <a href="#" class="dl-btn">Download</a>
+             </div>
         </div>
-    </header>
+   </header> 
     <main>
         <section class="banner">
             <div class="content">
@@ -43,9 +49,141 @@
                 </h2>
             </div>
         </section>
+        <section class="who-am-i">
+            <div class="wrap">
+                <div class="about ">
+                    <h2>WHO AM I</h2>
+                    <div class="desc commonbg">
+                        <p>Hi, I’m Gabriel, a self taught UI/UX Designer, and a Graphic Designer with 6+ years of experience. Proficient in Figma with knowledge on Adobe XD and using tools such as Adobe Photoshop and Illustrator to create graphic assets. I specialize on creating visually striking web design and making sure that it is user friendly as well.</p>
+                    </div>
+                </div>
+                <div class="about-ext">
+                    <div class="left commonbg">
+                        <h3>Visual Designer</h3>
+                        <p>WebTech Media 2023-Present</p>
+
+                        <h3>UI & Graphic Designer</h3>
+                        <p>Online Creative Media Experts 2016-2023</p>
+
+                        <h3>Multimedia Specialist</h3>
+                        <p>Rendition Digital Inc. 2011-2016</p>
+
+                    </div>
+                    <div class="right">
+                        <div class="bento-item commonbg">
+                            <h3>3</h3>
+                            <p>Years UI/WEB
+                                Experience</p>
+                        </div>
+                        <div class="bento-item commonbg">
+                            <h3>6</h3>
+                            <p>Years GFX Design
+                                Experience</p>
+                        </div>
+                        <div class="bento-item commonbg">
+                            <img src="img/skills.png" alt="">
+                        </div>
+                        <div class="bento-item commonbg">
+                            <span>KNOW
+                                MORE</span>
+                                <img src="img/Vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-bottom">
+                    <div class="item commonbg">
+                        <img src="img/desktop 1.png" alt="">
+                        <h3>UI/UX Design</h3>
+                        <p>Building visually striking and user-centric UI/UX web design and landing pages. Versatile on creating clean professional sites to vibrant gaming websites. </p>
+                    </div>
+                    <div class="item commonbg">
+                        <img src="img/phone 1.png" alt="">
+                        <h3>Mobile Design</h3>
+                        <p>85% of the worlds population owns a smartphone, i strive to creative visually appealing application design that is easy to use for the general populace.</p>
+                    </div>
+                    <div class="item commonbg">
+                        <img src="img/like 1.png" alt="">
+                        <h3>Social Media Posts</h3>
+                        <p>Engagement is an important aspect of social media marketing in todays world. Creating highly enganging social media design is one of my strengths as a designer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-logs">
+            <div class="wrap">
+                <h2>Work Logs</h2>
+                <div class="content">
+                    <div id="carousel-section">
+                        <div class="my-slider">
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="img/works/quick-manuals.png" alt="" class="slider-img">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="img/works/easy-manuals.png" alt="" class="slider-img">
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="img/works/smart-convert.png" alt="" class="slider-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <a class="previous">
+                            </a>
+                            <a class="next">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show_more commonbg">
+                        <span>SHOW MORE</span>
+                        <img src="img/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reach-out">
+            <div class="wrap">
+                <h2>Reach out</h2>
+                <div class="content commonbg">
+                    <p>You can reach me through the options below:</p>
+                    <ul>
+                        <li><img src="img/tel.png"></li>
+                        <li><img src="img/viber.png"></li>
+                        <li><img src="img/MAIL.png"></li>
+                        <li><img src="img/portfolio 1.png"></li>
+                    </ul>
+                    <div class="reach-out-btn commonbg">
+                        <span>CONTACT ME</span>
+                        <img src="img/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <br>
-    <p style="color: #ccc;text-align: center;font-family: Nico-Moji;">under construction...</p>
-    <br><br>
+    
+    <footer>
+        <div class="wrap">
+            <p style="color: #ccc;text-align: center;">Copyright © GabrielManahan. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleHeight() {
+            var myDiv = document.getElementById("item");
+    
+            if (myDiv.style.display === "block") {
+            myDiv.style.display = "none";
+        } else {
+            myDiv.style.display = "block";
+        }
+        }
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
